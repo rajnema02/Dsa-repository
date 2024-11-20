@@ -32,7 +32,7 @@ int main(){
     cin>>name;
 
     int len = getLength(name);
-    cout<<"The length of the string is ra"<<len<<endl;
+    cout<<"The length of the string is: "<<len<<endl;
 
     
     cout<<"Palindrome or not: "<<palindromeOrNot(name,len)<<endl;
