@@ -22,6 +22,24 @@ int printSum(int arr[][4], int n,int m){
     }
 }
 
+int largestSum(int arr[][4], int n, int m){
+    int maxi = INT8_MIN;
+    int rowIndex = -1;
+
+    for(int i=0; i<3; i++){
+        int sum = 0;
+        for(int j=0; j<4; i++){
+            sum+= arr[i][j];
+        }
+        if(sum > maxi){
+            maxi = sum;
+            rowIndex = n;
+        }
+    }
+    cout<<"The maximum sum is: "<<maxi<<endl;
+    return n;
+}
+
 int main(){
     int arr[3][4];
 
@@ -40,16 +58,21 @@ int main(){
     }
     
 
-    int target;
-    cout<<"Enter the elemnt you want to search"<<endl;
-    cin>>target;
+    // int target;
+    // cout<<"Enter the elemnt you want to search"<<endl;
+    // cin>>target;
 
-    if(isPresent(arr,target,3,4)){
-        cout<<"the number is found"<<endl;
-    }
-    else{
-        cout<<"The number is not exist"<<endl;
-    }
+    // if(isPresent(arr,target,3,4)){
+    //     cout<<"the number is found"<<endl;
+    // }
+    // else{
+    //     cout<<"The number is not exist"<<endl;
+    // }
 
-    printSum(arr,3,4);
+    // printSum(arr,3,4);
+
+    int ansIndex = largestSum(arr,3,4);
+    cout<<"Max row is at index "<<ansIndex<<endl;
+
+    return 0;
 }
