@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
 
 bool binarySearch(int arr[],int s ,int e ,int key){
