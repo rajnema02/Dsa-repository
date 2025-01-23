@@ -1,9 +1,11 @@
 #include<iostream>
 #include<stack>
 
+using namespace std;
+
 void solve(stack<int>& s, int x){
 
-    if(s.empty){
+    if(s.empty()){
         s.push(x);
         return;
     }
