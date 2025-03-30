@@ -49,3 +49,5 @@ int main(){
     int bookAllocation = allocateBook(arr, n, m);
 
     cout<<"The value is "<<bookAllocation<<endl;
+    return 0;
+}
